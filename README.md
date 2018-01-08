@@ -1,13 +1,23 @@
-# BonobonoTurtlebot
-보노보노팀의 터틀봇 주행
-영상처리 소스코드 확인
+# Project Title
+
+Turtlebot Autorace Competition
+
+## Source Code
+ImageProcess Code
  => Turtlebot_Autorace/source/src/ImageProcess/src/
 
+ 	* Detect Red and Square *
 	DetectBarAndLight.cpp
+
+	* Detect Continuous Squares *
 	DetectParkZone.cpp
+
+	* Calculate the slope of the line *
 	LineTracing.cpp
 
-## 1. Server Computer
+## Screenshots
+
+### 1. Server Computer
 ![Alt text](/capture/1.png)
 <pre><code> $ifconfig </code></pre>
 ![Alt text](/capture/3.png)
@@ -20,7 +30,7 @@
 ![Alt text](/capture/10.png)
 
 
-## 2. Turtlebot
+### 2. Turtlebot
 
 Terminal-1 ( Connect Turtlebot And OpenCR ) 
 <pre><code> $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 </code></pre>
@@ -37,5 +47,5 @@ Terminal-4 ( Run ParkZone )
 <pre><code> $rosrun opencv_tutorial ParkZone </code></pre>
 ![Alt text](/capture/ParkZone.png)
 
-## 3. OpenCR Upload 
+### 3. OpenCR Upload 
 turtlebot_openCR/turtlebot/turtlebot.ino  : File Upload
